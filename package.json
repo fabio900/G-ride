@@ -1,0 +1,41 @@
+{
+  "name": "g-ride",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/icons": "^4.2.1",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-dom": "^16.8.6",
+    "react-gesture-gallery": "^1.0.1",
+    "react-gesture-responder": "^2.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "node-sass -w src/asset/scss/main.scss -o src/asset/css/ --recursive"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
