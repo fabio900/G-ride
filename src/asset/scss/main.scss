@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
   }
 
 body{
@@ -26,6 +27,37 @@ body{
     
     z-index: 1;
   }
+
+  .Bg-image{
+    background-image: url(../img/j.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    // animation: fade 20s infinite;
+  }
+  @keyframes fade{
+    0%{
+      background-image: url(../img/j.jpg)
+    }
+
+    20%{
+      background-image: url(../img/t8.jpg)
+    }
+
+    40%{
+      background-image: url(../img/tg5.jpg)
+    }
+    60%{
+      background-image: url(../img/tg9.jpg)
+    }
+    80%{
+      background-image: url(../img/tg5.jpg)
+    }
+
+    100%{
+      background-image: url(../img/tg7.jpg)
+    }
+  }
   
   .nav__link {
     color: #fff;
@@ -38,7 +70,7 @@ body{
 
 .page {
     height: 100%;
-    padding: calc(15% + 1.5em) 5% 5%;
+    // padding: calc(15% + 1.5em) 5% 5%;
     overflow-y: auto;
     position: fixed;
     top: 0;
@@ -78,7 +110,7 @@ body{
   .card{
     width: 20rem;
     // height: 30rem;
-   
+    margin-top: 35%
   }
 
   .card:hover{
@@ -97,6 +129,12 @@ body{
   padding: 6rem;
 
 }
-.card-img-top{
+.overflow{
+  overflow: hidden;
+}
+
+.card-img-top:hover{
+  transform: scale(1.8);
+  transition: transform 0.5s ease;
   
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import * as serviceWorker from './serviceWorker'
 // import Header from './asset/component/headerComponent/Header'
-// import Body from './asset/component/bodyComponent/Body'
+
 // import Foot from './asset/component/footerComponent/Foot'
 import Home from './asset/component/views/Home'
 import MakeRequest from './asset/component/views/MakeRequest'
@@ -29,7 +30,7 @@ const supportsHistory = 'pushState' in window.history;
 
 const App = () => (
   <BrowserRouter forceRefresh={!supportsHistory}>
- 
+     
       <Nav />
       <main>
         <Route

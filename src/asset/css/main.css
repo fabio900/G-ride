@@ -20,6 +20,27 @@ body {
   width: 100%;
   z-index: 1; }
 
+.Bg-image {
+  background-image: url(../img/j.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  animation: fade 20s infinite; }
+
+@keyframes fade {
+  0% {
+    background-image: url(../img/j.jpg); }
+  20% {
+    background-image: url(../img/t8.jpg); }
+  40% {
+    background-image: url(../img/tg5.jpg); }
+  60% {
+    background-image: url(../img/tg9.jpg); }
+  80% {
+    background-image: url(../img/tg5.jpg); }
+  100% {
+    background-image: url(../img/tg7.jpg); } }
+
 .nav__link {
   color: #fff;
   margin-left: .5em;
@@ -27,7 +48,6 @@ body {
 
 .page {
   height: 100%;
-  padding: calc(15% + 1.5em) 5% 5%;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -57,7 +77,8 @@ body {
   margin-top: 0; }
 
 .card {
-  width: 20rem; }
+  width: 20rem;
+  margin-top: 35%; }
 
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important; }
@@ -71,3 +92,10 @@ body {
 
 .container-fluid.row {
   padding: 6rem; }
+
+.overflow {
+  overflow: hidden; }
+
+.card-img-top:hover {
+  transform: scale(1.8);
+  transition: transform 0.5s ease; }
