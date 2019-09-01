@@ -1,6 +1,5 @@
 import React from 'react';
 import * as serviceWorker from './serviceWorker'
-// import Header from './asset/component/headerComponent/Header'
 
 // import Foot from './asset/component/footerComponent/Foot'
 import Home from './asset/component/views/Home'
@@ -9,8 +8,6 @@ import Nav from './asset/component/headerComponent/Nav'
 
 
 import './asset/css/main.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 
 import { 

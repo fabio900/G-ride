@@ -1,18 +1,49 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.l-wrap {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.grid-item {
+  width: calc((100% - 24px * 2) / 3);
+  margin-top: 24px;
+  margin-right: 24px;
+  float: left; }
+
+/* For a 3-column grid */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.25); }
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 4rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
 
 body {
   line-height: 1.5;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5); }
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
 
 .nav {
-  background: rgba(5, 7, 165, 0.082);
   padding: 17px;
   position: fixed;
   text-align: right;
@@ -20,34 +51,12 @@ body {
   width: 100%;
   z-index: 1; }
 
-.Bg-image {
-  background-image: url(../img/j.jpg);
-  height: 100vh;
-  background-position: top;
-  background-size: cover;
-  animation: fade 20s infinite; }
-
-@keyframes fade {
-  0% {
-    background-image: url(../img/j.jpg); }
-  20% {
-    background-image: url(../img/t8.jpg); }
-  40% {
-    background-image: url(../img/tg5.jpg); }
-  60% {
-    background-image: url(../img/tg9.jpg); }
-  80% {
-    background-image: url(../img/tg5.jpg); }
-  100% {
-    background-image: url(../img/tg7.jpg); } }
-
 .nav__link {
-  color: #fff;
+  color: orangered;
   margin-left: .5em;
   text-decoration: none; }
 
 .page {
-  height: 100%;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -75,27 +84,3 @@ body {
 
 .page h1 {
   margin-top: 0; }
-
-.card {
-  width: 20rem;
-  margin-top: 35%; }
-
-.card:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important; }
-
-.card-body {
-  padding: 3rem 0 !important; }
-
-.card-text {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.9rem; }
-
-.container-fluid.row {
-  padding: 6rem; }
-
-.overflow {
-  overflow: hidden; }
-
-.card-img-top:hover {
-  transform: scale(1.8);
-  transition: transform 0.5s ease; }

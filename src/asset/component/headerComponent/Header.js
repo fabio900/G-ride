@@ -5,10 +5,13 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     render() {
         return (
-           <header className = "Bg-image">
-           
-
-          
+            
+           <header>
+            <div className = "heading-wrap">
+            <div className = "heading-primary">
+            <h1>Discover <br/>Ghana</h1>
+            </div>
+            </div>
            </header>
         )
     }
