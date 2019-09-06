@@ -1,5 +1,30 @@
+.heading-wrap{
+    margin: 2.5rem;
+    padding: 1.5rem
+}
 .heading-primary{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 2.5rem;
+    &.h1{
+        color: whitesmoke;
+      
+ 
+
+    }
     
 }
+
+.heading-secondary,p{
+    color: whitesmoke;
+   margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: initial;
+}
+
+.u-center-text{
+    text-align: center;
+}
+
+
