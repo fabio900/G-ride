@@ -15,11 +15,10 @@ export default class Header extends Component {
                 <p>Emabck on a journey</p>
                 <p>See beautiful landscapes and cultures</p> 
                 <p>Experince a journey of a lifetime</p>
-                <div className="div u-center-text">
-                <a href="#" className ="btn-text">Get Started</a>
-                </div>
-            
+                <a href="#" className ="btn btn-white">Get Started</a>
             </div>
+           
+
             
             </div>
            </header>

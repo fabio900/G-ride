@@ -1,0 +1,29 @@
+.btn:visited,
+    .btn:link{
+        text-decoration: none;
+        padding: 15px 40px;
+        text-align: center;
+        display: inline-block;
+
+}
+
+
+.btn-white{
+    background-color: whitesmoke;
+    border-radius: 100px;
+  
+}
+
+.btn:active{
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        
+}
+
+
+.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
+    
+}

@@ -2,7 +2,10 @@
 @import "variable";
 @import "grid";
 @import "typography";
-// @import "buttons";
+@import "buttons";
+@import "mixins";
+@import "gallery";
+
 
 
 
@@ -47,12 +50,13 @@ body{
 
 
 .page {
-    // height: 100%;
+    height: 100vh;
     // padding: calc(15% + 1.5em) 5% 5%;
     overflow-y: auto;
-    position: fixed;
+    // position: fixed;
     top: 0;
     width: 100%;
+
 
 
     -webkit-overflow-scrolling: touch;
@@ -114,3 +118,4 @@ body{
   }
   
 }
+

@@ -6,6 +6,19 @@ html {
 *:after {
   box-sizing: inherit; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #eeee; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    background-color: orangered;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+
 .l-wrap {
   max-width: 1140px;
   margin-right: auto;
@@ -18,14 +31,6 @@ html {
   float: left; }
 
 /* For a 3-column grid */
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  text-align: center;
-  background: rgba(255, 0, 0, 0.25); }
-
 .heading-wrap {
   margin: 2.5rem;
   padding: 1.5rem; }
@@ -33,19 +38,42 @@ html {
 .heading-primary {
   font-weight: 700;
   font-size: 2.5rem;
-  color: whitesmoke;
-  margin-bottom: 2.5rem; }
+  color: whitesmoke; }
+  .heading-primary:not(:last-child) {
+    margin-bottom: 2.5rem; }
   .heading-primary.h1 {
-    color: whitesmoke; }
+    color: whitesmoke;
+    letter-spacing: 35px; }
 
 .heading-secondary, p {
   color: whitesmoke;
-  margin-bottom: 2rem;
   font-weight: 700;
-  text-transform: initial; }
+  text-transform: initial;
+  text-align: center; }
+  .heading-secondary:not(:last-child), p:not(:last-child) {
+    margin-bottom: 2.5rem; }
 
 .u-center-text {
   text-align: center; }
+
+.btn:visited,
+.btn:link {
+  text-decoration: none;
+  padding: 15px 40px;
+  text-align: center;
+  display: inline-block; }
+
+.btn-white {
+  background-color: whitesmoke;
+  border-radius: 100px; }
+
+.btn:active {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); }
 
 * {
   box-sizing: border-box;
@@ -73,8 +101,8 @@ body {
   text-decoration: none; }
 
 .page {
+  height: 100vh;
   overflow-y: auto;
-  position: fixed;
   top: 0;
   width: 100%;
   -webkit-overflow-scrolling: touch;

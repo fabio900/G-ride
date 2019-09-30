@@ -1,16 +1,22 @@
 .heading-wrap{
     margin: 2.5rem;
-    padding: 1.5rem
+    padding: 1.5rem;
+    
 }
 .heading-primary{
     font-weight: 700;
     font-size: 2.5rem;
     color: whitesmoke;
-    margin-bottom: 2.5rem;
+    // margin-bottom: 2.5rem;
+    &:not(:last-child){
+        margin-bottom:2.5rem;
+
+        }
+
     &.h1{
         color: whitesmoke;
-      
- 
+        letter-spacing: 35px;
+       
 
     }
     
@@ -18,9 +24,14 @@
 
 .heading-secondary,p{
     color: whitesmoke;
-   margin-bottom: 2rem;
+//    margin-bottom: 2rem;
+&:not(:last-child){
+    margin-bottom:2.5rem;
+    
+    }
     font-weight: 700;
     text-transform: initial;
+    text-align: center;
 }
 
 .u-center-text{
